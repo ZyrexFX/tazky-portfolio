@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#131b2b"/>
+  <text x="32" y="45" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#ff4d4d">TF</text>
+  <path d="M12 54h40" stroke="#5b91a3" stroke-width="1" opacity=".55"/>
+</svg>
