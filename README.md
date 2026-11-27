@@ -97,4 +97,8 @@ public/
 
 ## Deploy
 
-Proyek ini siap di-deploy ke Vercel. Hubungkan repositori, lalu tambahkan `GITHUB_TOKEN` bila ingin batas API yang lebih tinggi. Tidak ada database atau layanan lain yang dibutuhkan.
+- Produksi: <https://tazky-portfolio.vercel.app>
+- Repositori: <https://github.com/ZyrexFX/tazky-portfolio>
+- Proyek Vercel `tazky-portfolio` sudah terhubung ke repositori, jadi setiap push ke `main` otomatis membuat deployment produksi baru.
+- `GITHUB_TOKEN` bersifat opsional. Tanpa token, API GitHub tetap dipanggil tanpa autentikasi dan bagian proyek memakai data `fallback` bila kena batas.
+- Tidak ada database atau layanan lain yang dibutuhkan.
