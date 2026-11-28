@@ -36,20 +36,15 @@ export default function Home() {
                   </span>
                 </h1>
 
-                <p className="mt-6 font-serif text-[clamp(1.45rem,2.4vw,2rem)] italic leading-tight text-accent">
-                  building small things for the web.
-                </p>
-
-                <p className="mt-6 max-w-md text-[15px] leading-relaxed text-mist text-pretty">
-                  Hey, I&apos;m Tazky, an undergrad in Indonesia. I learn by shipping small
-                  projects: JavaScript and Python on the app side, MySQL and MongoDB when the data
-                  shows up. The latest one is flagmint, a two-language geography quiz.
+                <p className="mt-7 max-w-[38ch] text-[16px] leading-relaxed text-mist text-pretty">
+                  I&apos;m learning UI/UX and software engineering, and I want to go beyond just
+                  that.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a
                     href="#work"
-                    className="inline-flex min-h-12 items-center justify-center bg-accent px-5 text-sm font-medium text-deep transition-colors hover:bg-accent-lift"
+                    className="inline-flex min-h-12 items-center justify-center rounded-lg bg-accent-solid px-5 text-sm font-medium text-paper transition-colors hover:bg-accent-solid-hover"
                   >
                     See selected work
                   </a>
@@ -57,7 +52,7 @@ export default function Home() {
                     href={site.githubUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex min-h-12 items-center justify-center gap-2 border border-tide/40 px-5 text-sm font-medium text-paper transition-colors hover:border-accent hover:text-accent"
+                    className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-tide/40 px-5 text-sm font-medium text-paper transition-colors hover:border-accent hover:text-accent"
                   >
                     GitHub
                     <ExternalIcon className="size-3.5" />
@@ -74,17 +69,15 @@ export default function Home() {
                 <span className="text-tide">Currently learning:</span> {site.learning.join(", ")}
               </p>
               <a
-                href="#work"
+                href="#about"
                 className="inline-flex min-h-11 items-center gap-3 self-start text-mist transition-colors hover:text-accent sm:self-auto"
               >
                 <span aria-hidden="true" className="h-px w-8 bg-tide/60" />
-                Scroll to the work
+                Scroll to about
               </a>
             </div>
           </div>
         </section>
-
-        <Projects />
 
         <section
           id="about"
@@ -95,13 +88,13 @@ export default function Home() {
             aria-hidden="true"
             className="pointer-events-none absolute -top-8 right-0 select-none font-serif text-[clamp(9rem,22vw,20rem)] italic leading-none text-shelf/20"
           >
-            02
+            01
           </span>
 
           <div className="relative mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
             <div className="grid gap-8 lg:grid-cols-12">
               <div className="lg:col-span-3">
-                <SectionLabel index="02" className="text-tide">
+                <SectionLabel index="01" className="text-tide">
                   About
                 </SectionLabel>
               </div>
@@ -172,6 +165,8 @@ export default function Home() {
           </div>
         </section>
 
+        <Projects />
+
         <section
           id="contact"
           aria-labelledby="contact-title"
@@ -220,7 +215,7 @@ export default function Home() {
 
                 <a
                   href={`mailto:${site.email}`}
-                  className="mt-8 inline-flex min-h-12 max-w-full items-center gap-2.5 bg-accent px-4 text-[13px] font-medium leading-snug text-deep transition-colors hover:bg-accent-lift sm:px-5 sm:text-sm"
+                  className="mt-8 inline-flex min-h-12 max-w-full items-center gap-2.5 rounded-lg bg-accent-solid px-4 text-[13px] font-medium leading-snug text-paper transition-colors hover:bg-accent-solid-hover sm:px-5 sm:text-sm"
                 >
                   <MailIcon className="size-4 shrink-0" />
                   <span className="sr-only">Email </span>

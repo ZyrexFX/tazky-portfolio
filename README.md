@@ -76,7 +76,7 @@ public/
 
 ## Arah desain
 
-- **Palet**: `#131B2B` (latar), `#2F4A63` dan `#5B91A3` (struktur dan air), `#FF4D4D` (aksen 10%, hover `#FF6B6B`), `#A9C6CF` dan `#E9F2F0` (teks). Aksen dipakai hanya untuk CTA, kata miring, underline nav aktif, focus ring, dan seleksi.
+- **Palet**: `#131B2B` (latar), `#2F4A63` dan `#5B91A3` (struktur dan air), `#FF4D4D` (aksen teks, underline, focus), `#C62828` (isi tombol, hover `#B91C1C`), `#A9C6CF` dan `#E9F2F0` (teks). Tombol memakai teks `#E9F2F0` di atas merah tua supaya tidak nyaru.
 - **Tipografi**: DM Sans untuk teks dan antarmuka, Newsreader untuk nama, judul, dan aksen italic. Pasangan ini memberi karakter editorial yang tenang dan tidak memakai font bawaan template developer.
 - **Parallax**: tiga lapisan kontur bergerak dengan kecepatan berbeda di hero. Garis kontur adalah motif identitas, bukan hiasan acak, dan berhenti saat `prefers-reduced-motion` aktif.
 - **Scene interaktif**: akuarium garis di samping nama. Ikan dan partikel bergerak di dalam batas yang tidak digambar, kursor membuat ikan menghindar, gulir menggeser lapisan, dan klik di dalam akuarium menebar pakan. Tombol `Feed` menjadi jalur keyboard, tombol `Pause` menghentikan animasi latar, dan gerak ambient berhenti saat `prefers-reduced-motion` aktif.

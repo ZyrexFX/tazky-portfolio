@@ -17,7 +17,7 @@ export function Projects() {
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
         <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <SectionLabel index="01" className="text-tide">
+            <SectionLabel index="02" className="text-tide">
               Work
             </SectionLabel>
             <h2
@@ -171,7 +171,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
               href={project.homepage}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-11 items-center justify-center bg-accent px-5 text-sm font-medium text-deep transition-colors hover:bg-accent-lift"
+              className="inline-flex min-h-11 items-center justify-center rounded-lg bg-accent-solid px-5 text-sm font-medium text-paper transition-colors hover:bg-accent-solid-hover"
             >
               Open {project.name}
               <span className="sr-only"> (opens in a new tab)</span>
@@ -182,7 +182,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
             target="_blank"
             rel="noreferrer"
             aria-label={`${repositoryLabel} (opens in a new tab)`}
-            className="inline-flex min-h-11 items-center justify-center border border-tide/40 px-5 text-sm font-medium text-paper transition-colors hover:border-accent hover:text-accent"
+            className="inline-flex min-h-11 items-center justify-center rounded-lg border border-tide/40 px-5 text-sm font-medium text-paper transition-colors hover:border-accent hover:text-accent"
           >
             View code
           </a>

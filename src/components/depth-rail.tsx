@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 
 const sections = [
   { id: "home", label: "Home", number: "00" },
-  { id: "work", label: "Work", number: "01" },
-  { id: "about", label: "About", number: "02" },
+  { id: "about", label: "About", number: "01" },
+  { id: "work", label: "Work", number: "02" },
   { id: "contact", label: "Contact", number: "03" },
 ];
 
@@ -68,6 +68,7 @@ export function DepthRail() {
         />
         {sections.map((section, index) => {
           const isActive = index === active;
+          const isPassed = index < active;
 
           return (
             <li key={section.id}>
@@ -81,13 +82,21 @@ export function DepthRail() {
                 <span className="relative grid size-4 place-items-center">
                   <span
                     className={`size-1.5 rounded-full transition-colors ${
-                      isActive ? "bg-accent" : "bg-tide/60 group-hover:bg-mist"
+                      isActive
+                        ? "bg-accent"
+                        : isPassed
+                          ? "bg-accent/55"
+                          : "bg-tide/60 group-hover:bg-mist"
                     }`}
                   />
                 </span>
                 <span
                   className={`text-[10px] tabular-nums transition-colors ${
-                    isActive ? "text-accent" : "text-tide group-hover:text-mist"
+                    isActive
+                      ? "text-accent"
+                      : isPassed
+                        ? "text-mist"
+                        : "text-tide group-hover:text-mist"
                   }`}
                 >
                   {section.number}

@@ -8,8 +8,8 @@ import { site } from "@/data/site";
 
 const links = [
   { id: "home", href: "#home", label: "Home" },
-  { id: "work", href: "#work", label: "Work" },
   { id: "about", href: "#about", label: "About" },
+  { id: "work", href: "#work", label: "Work" },
   { id: "contact", href: "#contact", label: "Contact" },
 ];
 
@@ -182,7 +182,7 @@ export function SiteHeader() {
             onClick={() => setOpen((value) => !value)}
             aria-expanded={open}
             aria-controls="mobile-menu"
-            className="inline-flex min-h-11 min-w-11 items-center justify-center border border-tide/25 px-3 text-sm text-paper transition-colors hover:border-tide hover:text-accent md:hidden"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-tide/25 px-3 text-sm text-paper transition-colors hover:border-tide hover:text-accent md:hidden"
           >
             {open ? "Close" : "Menu"}
           </button>
