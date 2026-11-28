@@ -149,7 +149,7 @@ export default function Home() {
                   <div>
                     <dt className="text-[10px] uppercase tracking-[0.16em] text-tide">Focus</dt>
                     <dd className="mt-2 text-sm leading-snug text-paper">
-                      {site.focus} projects
+                      {`${site.focus} projects`}
                     </dd>
                   </div>
                   <div>
