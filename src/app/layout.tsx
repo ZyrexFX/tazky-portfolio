@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description:
-    "Tazky Ferliansyah is an undergrad in Indonesia building small things for the web with JavaScript, Python, MySQL, and MongoDB.",
+    "Tazky Ferliansyah is learning UI/UX and software engineering in Indonesia, building small projects for the web with JavaScript, Python, MySQL, and MongoDB.",
   applicationName: `${site.name} Portfolio`,
   authors: [{ name: site.name, url: site.githubUrl }],
   keywords: [
@@ -32,6 +32,8 @@ export const metadata: Metadata = {
     "Tazky",
     "ZyrexFX",
     "portfolio",
+    "UI/UX",
+    "software engineering",
     "web developer",
     "JavaScript",
     "Python",
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     title: `${site.name} | Portfolio`,
     description:
-      "An undergrad in Indonesia building for the web with JavaScript and Python, then keeping the data tidy in MySQL or MongoDB.",
+      "Learning UI/UX and software engineering in Indonesia, building for the web with JavaScript and Python, then keeping the data tidy in MySQL or MongoDB.",
     siteName: site.name,
   },
 };
