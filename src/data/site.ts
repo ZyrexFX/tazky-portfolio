@@ -9,7 +9,7 @@ export const site = {
   location: "Bogor, Indonesia",
   role: "Undergrad",
   degree: "Undergraduate B.Sc. Informatics",
-  semester: "Semester 7",
+  semester: "7th semester",
   focus: "Data and front-end",
   learning: ["JavaScript", "Python", "MySQL", "MongoDB"],
   year: 2026,
