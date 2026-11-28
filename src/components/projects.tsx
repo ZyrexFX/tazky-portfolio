@@ -13,8 +13,19 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
 
 export function Projects() {
   return (
-    <section id="work" aria-labelledby="work-title" className="scroll-mt-16 border-t border-tide/15">
-      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+    <section
+      id="work"
+      aria-labelledby="work-title"
+      className="relative scroll-mt-16 overflow-hidden border-t border-tide/15"
+    >
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-8 right-0 select-none font-serif text-[clamp(9rem,22vw,20rem)] italic leading-none text-shelf/20"
+      >
+        02
+      </span>
+
+      <div className="relative mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
         <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
           <div>
             <SectionLabel index="02" className="text-tide">
@@ -28,7 +39,7 @@ export function Projects() {
             </h2>
           </div>
           <p className="max-w-xs text-sm leading-relaxed text-mist md:pb-2 md:text-right">
-            Hand-picked. Not every public repo makes the cut.
+            Some of my works so far.
           </p>
         </div>
 

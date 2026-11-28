@@ -36,7 +36,11 @@ export default function Home() {
                   </span>
                 </h1>
 
-                <p className="mt-7 max-w-[38ch] text-[16px] leading-relaxed text-mist text-pretty">
+                <p className="mt-6 font-serif text-[clamp(1.15rem,1.5vw,1.4rem)] leading-snug tracking-[-0.01em] text-accent">
+                  {site.degree}
+                </p>
+
+                <p className="mt-4 max-w-[38ch] text-[16px] leading-relaxed text-mist text-pretty">
                   I&apos;m learning UI/UX and software engineering, and I want to go beyond just
                   that.
                 </p>
@@ -116,39 +120,43 @@ export default function Home() {
 
               <div className="space-y-5 text-[15px] leading-relaxed text-mist lg:col-span-5">
                 <p>
-                  I&apos;m Tazky, an undergrad in Indonesia. Most of what I know comes from
-                  building small things that actually get used, then going back to sharpen the
-                  basics: JavaScript, Python, MySQL, and MongoDB.
+                  I&apos;m an Informatics Engineering student at Gunadarma University, currently
+                  in my 7th semester. Computers have been part of my life since I was a kid, so
+                  tinkering with tech became second nature, and I still love poking around just to
+                  see how things work.
                 </p>
                 <p>
-                  flagmint is the latest one, a two-language geography quiz with flags, capitals,
-                  and state flags. More will land here as they ship.
+                  I started out focused on front-end and UI/UX design, and lately I&apos;ve been
+                  getting into back-end and data too. I learn best by doing, so I build small
+                  things, ship them, and get a real kick out of seeing people use them. flagmint is
+                  my latest one, with more on the way.
                 </p>
               </div>
 
               <div className="lg:col-span-4">
                 <dl className="grid grid-cols-2 gap-x-6 gap-y-6">
                   <div>
-                    <dt className="text-[10px] uppercase tracking-[0.16em] text-tide">Status</dt>
-                    <dd className="mt-2 text-sm text-paper">{site.role}</dd>
+                    <dt className="text-[10px] uppercase tracking-[0.16em] text-tide">Education</dt>
+                    <dd className="mt-2 text-sm leading-snug text-paper">
+                      B.Sc. Informatics
+                      <span className="mt-1 block text-[11px] text-tide">{site.semester}</span>
+                    </dd>
                   </div>
                   <div>
                     <dt className="text-[10px] uppercase tracking-[0.16em] text-tide">Location</dt>
-                    <dd className="mt-2 text-sm text-paper">{site.location}</dd>
+                    <dd className="mt-2 text-sm leading-snug text-paper">{site.location}</dd>
                   </div>
                   <div>
-                    <dt className="text-[10px] uppercase tracking-[0.16em] text-tide">Languages</dt>
-                    <dd className="mt-2 text-sm text-paper">JavaScript, Python</dd>
+                    <dt className="text-[10px] uppercase tracking-[0.16em] text-tide">Focus</dt>
+                    <dd className="mt-2 text-sm leading-snug text-paper">
+                      {site.focus} projects
+                    </dd>
                   </div>
                   <div>
-                    <dt className="text-[10px] uppercase tracking-[0.16em] text-tide">Databases</dt>
-                    <dd className="mt-2 text-sm text-paper">MySQL, MongoDB</dd>
-                  </div>
-                  <div className="col-span-2">
                     <dt className="text-[10px] uppercase tracking-[0.16em] text-tide">
                       Latest project
                     </dt>
-                    <dd className="mt-2 text-sm">
+                    <dd className="mt-2 text-sm leading-snug">
                       <a
                         href={`${site.githubUrl}/flagmint`}
                         target="_blank"

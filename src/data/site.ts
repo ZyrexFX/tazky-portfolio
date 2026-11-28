@@ -6,8 +6,11 @@ export const site = {
   githubUser: "ZyrexFX",
   githubUrl: "https://github.com/ZyrexFX",
   email: "tazky.ferliansyah21@gmail.com",
-  location: "Indonesia",
+  location: "Bogor, Indonesia",
   role: "Undergrad",
+  degree: "Undergraduate B.Sc. Informatics",
+  semester: "Semester 7",
+  focus: "Data and front-end",
   learning: ["JavaScript", "Python", "MySQL", "MongoDB"],
   year: 2026,
 } as const;
@@ -52,6 +55,24 @@ export const featuredRepos: FeaturedRepo[] = [
       license: "MIT",
       pushedAt: "2026-11-23T12:24:31Z",
       topics: ["flags", "geography", "indonesia", "nextjs", "quiz"],
+    },
+  },
+  {
+    repo: "sentimen-access-kai",
+    tags: ["Sentiment analysis", "FastAPI", "scikit-learn"],
+    liveUrl: "https://sentimen-access-kai.vercel.app",
+    description:
+      "Review sentiment for Access by KAI, from TF-IDF and a LinearSVC model behind FastAPI to a React front end.",
+    fallback: {
+      name: "sentimen-access-kai",
+      description:
+        "Analisis sentimen ulasan Access by KAI: FastAPI, TF-IDF + LinearSVC, React.",
+      url: "https://github.com/ZyrexFX/sentimen-access-kai",
+      homepage: "https://sentimen-access-kai.vercel.app",
+      language: "Python",
+      license: null,
+      pushedAt: "2026-11-24T03:17:20Z",
+      topics: ["fastapi", "indonesia", "react", "scikit-learn", "sentiment-analysis", "vercel"],
     },
   },
 ];
