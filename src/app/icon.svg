@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Tazky.F">
+  <rect width="64" height="64" rx="14" fill="#131B2B"/>
+  <!-- Serif "T" drawn as a path so it renders the same everywhere -->
+  <path fill="#F4F1EA" d="M12 15h32v9.5h-2.2c-.5-3-1.6-4.5-4.6-4.5h-3.6v23.2c0 1.8.8 2.6 3.2 2.8v2H21.2v-2c2.4-.2 3.2-1 3.2-2.8V20h-3.6c-3 0-4.1 1.5-4.6 4.5H12z"/>
+  <!-- Accent dot, echoing the "Tazky.F" wordmark -->
+  <circle cx="49" cy="46" r="4.5" fill="#FF4D4F"/>
+</svg>
