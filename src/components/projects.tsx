@@ -184,7 +184,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
               rel="noreferrer"
               className="inline-flex min-h-11 items-center justify-center rounded-lg bg-accent-solid px-5 text-sm font-medium text-paper transition-colors hover:bg-accent-solid-hover"
             >
-              Open {project.name}
+              Open live
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
           ) : null}
